@@ -28,7 +28,7 @@ RUN set -xe \
         sqlsrv \
         pdo_sqlsrv \
     && docker-php-ext-enable --ini-name 30-sqlsrv.ini sqlsrv \
-    && docker-php-ext-enable --ini-name 35-pdo_sqlsrv.ini pdo_sqlsrv \
+    && docker-php-ext-enable --ini-name 35-pdo_sqlsrv.ini pdo_sqlsrv && \
     # 安装oracle扩展
     unzip /tmp/oracle-sdk/instantclient-basic-linux.x64-12.1.0.2.0.zip -d /usr/local/ && \
     unzip /tmp/oracle-sdk/instantclient-sdk-linux.x64-12.1.0.2.0.zip -d /usr/local/ && \
